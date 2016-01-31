@@ -1,1 +1,2 @@
 files/test_dir
+!files/test_dir/should_be_here_maybe

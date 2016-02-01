@@ -13,6 +13,15 @@ $ docker-compose -v
 docker-compose version 1.5.2, build e5cf49d
 ```
 
+I get expected behaviour - parity between build and compose - using Ubuntu 14.04 with `docker` and `docker-compose` versions:
+```
+$ docker -v
+Docker version 1.9.1, build a34a1d5
+
+$ docker-compose -v
+docker-compose version 1.5.2, build 7240ff3
+```
+
 # Test cases
 
 This repo has 3 branches, differing only in the `.dockerignore` file:

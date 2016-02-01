@@ -25,8 +25,11 @@ docker-compose version 1.5.2, build 7240ff3
 # Test cases
 
 This repo has 3 branches, differing only in the `.dockerignore` file:
+
 1. **master** branch: the `.dockerignore` file specifies a single file. I get identical output from `docker build && docker run` and `docker-compose up`: I can't see the ignored file but can see the other of the two files in the *files/test_dir* directory.
+
 1. **bad-1** branch: the `.dockerignore` files specifies a directory. With `docker build` we see no files, as expected, but with `docker-compose up` we see all the files.
+
 1. **bad-2** branch: the `.dockerignore` files specifies a directory plus an exclusion. With `docker build` we see the excluded file, as expected, but with `docker-compose up` we see all the files again.
 
 ## What I see
